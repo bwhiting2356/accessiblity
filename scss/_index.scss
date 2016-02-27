@@ -1,32 +1,38 @@
-/* Variables */
 /* Global Layout Set-up */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3A6355;
-  background: #EBE1DD; }
+  color: $color-text;
+  background: $color-bg;
+}
 
 /* Link Styles */
+
 a {
   text-decoration: none;
-  color: #3A6355; }
+  color: $color-link;
+}
 
 a:hover {
-  color: #3A6355; }
+  color: $color-link;
+}
 
 /* Section Styles */
+
 .main-nav {
   width: 100%;
-  background: rgba(235, 225, 221, 0.8);
+  background: $color-nav-bg;
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  text-align: center; }
+  text-align: center;
+}
 
 .nav {
   display: flex;
@@ -34,68 +40,82 @@ a:hover {
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+}
 
 .nav .name {
   display: block;
   margin-right: auto;
   color: white;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+}
 
 .nav li {
-  padding: 5px 10px 10px 10px; }
+  padding: 5px 10px 10px 10px;
+}
 
 .nav a {
-  transition: all .5s; }
+  transition: all .5s;
+}
 
 .nav a:hover {
-  opacity: 0.6; }
+  opacity: 0.6;
+}
 
 header {
   text-align: center;
-  background: url("../img/concert02_no_text.jpg") no-repeat top center;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-  height: 350px; }
+  height: 350px;
+}
 
 .tag {
   color: black;
   padding: 10px;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+}
 
-.name {
-  font-weight: 300; }
+.name{
+  font-weight: 300;
+}
 
-header .name {
-  font-size: 3em; }
-
+header .name{
+  font-size: 3em;
+}
 .tagline {
   font-weight: 600;
   padding: 20px;
   text-transform: uppercase;
-  color: #781125; }
+  color: $color-tagline;
+}
 
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
-  clear: both; }
-  .card:hover {
-    border-color: #AB5833; }
+  border-top: 4px solid $color-card;
+  clear: both;
+
+  &:hover {
+    border-color: $color-card-hover;
+  }
+}
 
 .photo {
   display: block;
   width: 200px;
   height: 0%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .information {
   width: 100%;
   text-align: center;
   /*display: inline-block;
-  position: absolute;*/ }
+  position: absolute;*/
+}
 
 h1 {
   text-transform: uppercase;
@@ -103,43 +123,57 @@ h1 {
   letter-spacing: 10px;
   font-size: 2.8em;
   font-family: Raleway, sans-serif;
-  color: #292929;
+  color: $color-title-text;
   margin-top: 81px;
-  margin-left: 9px; }
+  margin-left: 9px;
+}
 
 h2 {
   font-size: 2em;
   text-transform: uppercase;
-  color: #781125;
+  color: $color-heading;
   margin-top: 10px;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 h3 {
   text-transform: uppercase;
-  color: #781125;
+  color: $color-heading;
   font-weight: normal;
   font-family: Raleway, sans-serif;
   letter-spacing: 3.5px;
   padding-top: 37px;
-  margin-left: 15px; }
+  margin-left: 15px;
+}
+
+
+
+.heading {
+
+}
 
 /* Footer styles */
+
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px; }
+  padding: 20px 0 40px 20px;
+}
 
 footer .copyright {
   top: -8px;
-  font-size: .75em; }
+  font-size: .75em;
+}
 
 footer ul {
   list-style-type: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 footer ul li {
-  display: inline-block; }
+  display: inline-block;
+}
 
 a.social {
   display: inline-block;
@@ -149,94 +183,77 @@ a.social {
   background-size: 30px 30px;
   opacity: 1;
   transition: all .5s;
-  background-color: #3A6355;
-  border-radius: 100%; }
+  background-color: $color-text;
+
+  border-radius: 100%;
+}
 
 a.twitter {
-  background-image: url(../img/twitter-32.png); }
+  background-image: url(../img/twitter-32.png);
+}
 
 a.youtube {
-  background-image: url(../img/youtube-32.png); }
+  background-image: url(../img/youtube-32.png);
+}
 
 a.spotify {
-  background-image: url(../img/spotify-32.png); }
+  background-image: url(../img/spotify-32.png);
+}
 
 a.social:hover {
-  opacity: 0.4; }
-
+  opacity: 0.4;
+}
 .clearfix {
-  clear: both; }
+  clear: both;
+}
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
+
   .flex {
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: flex;
     max-width: 1200px;
-    -ms-flex-pack: distribute; }
+    -ms-flex-pack: distribute;
+  }
 
   header {
-    min-height: 470px; }
+    min-height: 470px;
+  }
 
   .nav {
     max-width: 1200px;
-    padding: 0 30px; }
+    padding: 0 30px;
+  }
+
 
   main {
-    padding-top: 20px; }
+    padding-top: 20px;
+  }
 
   main p {
-    line-height: 1.6em; }
+    line-height: 1.6em;
+  }
 
-  .card {
+  .card{
     margin: 40px auto;
     padding: 20px 40px 40px;
     width: 80%;
-    max-width: 1000px; }
+    max-width: 1000px;
+  }
 
-  .photo {
+  .photo{
     width: 30%;
-    margin: 20px 30px; }
+    margin: 20px 30px;
+  }
 
-  .information {
-    text-align: left; }
+  .information{
+    text-align: left;
+  }
 
   footer {
     font-size: 1.3em;
     max-width: 1200px;
-    margin: 40px auto; } }
-/* Survey page styles */
-.photo {
-  width: 60%;
-  padding: 10px; }
-
-form {
-  margin: 0 auto;
-  text-align: left;
-  display: inline-block; }
-
-.container {
-  text-align: center; }
-
-.newsletter {
-  text-align: right; }
-
-/* Styles for larger screens */
-@media screen and (min-width: 840px) {
-  .photo {
-    width: 40%; } }
-/* Tour page styles */
-pre {
-  font-family: 'Open Sans', sans-serif; }
-
-.pick {
-  width: 40px;
-  height: 0%;
-  padding: 10px; }
-
-.tour {
-  display: inline-block;
-  margin: 0; }
-
-/*# sourceMappingURL=styles.css.map */
+    margin: 40px auto;
+  }
+}
