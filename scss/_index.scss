@@ -16,6 +16,8 @@ body {
 
 a {
   text-decoration: none;
+  border-bottom: 1.5px solid;
+  padding-bottom: 0.5px;
   color: $color-link;
 }
 
@@ -132,7 +134,7 @@ h2 {
   font-size: 2em;
   text-transform: uppercase;
   color: $color-heading;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: normal;
 }
 
@@ -144,12 +146,6 @@ h3 {
   letter-spacing: 3.5px;
   padding-top: 37px;
   margin-left: 15px;
-}
-
-
-
-.heading {
-
 }
 
 /* Footer styles */
@@ -173,6 +169,10 @@ footer ul {
 
 footer ul li {
   display: inline-block;
+}
+
+span.hide {
+  display: none;
 }
 
 a.social {

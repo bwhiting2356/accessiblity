@@ -14,6 +14,8 @@ body {
 /* Link Styles */
 a {
   text-decoration: none;
+  border-bottom: 1.5px solid;
+  padding-bottom: 0.5px;
   color: #3A6355; }
 
 a:hover {
@@ -111,7 +113,7 @@ h2 {
   font-size: 2em;
   text-transform: uppercase;
   color: #781125;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: normal; }
 
 h3 {
@@ -140,6 +142,9 @@ footer ul {
 
 footer ul li {
   display: inline-block; }
+
+span.hide {
+  display: none; }
 
 a.social {
   display: inline-block;
@@ -219,8 +224,33 @@ form {
 .container {
   text-align: center; }
 
-.newsletter {
+.newsletter p {
   text-align: right; }
+
+.info {
+  display: none; }
+
+button {
+  box-sizing: border-box;
+  margin: 10px 2px 0 2px;
+  width: calc(100% - 5px);
+  padding: 10px;
+  background: #3A6355;
+  border: 1px solid #14231e;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  cursor: pointer; }
+  button:hover {
+    opacity: 0.75; }
+
+fieldset {
+  margin-top: 20px; }
+
+textarea {
+  width: 100%;
+  height: 100px; }
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
@@ -238,5 +268,15 @@ pre {
 .tour {
   display: inline-block;
   margin: 0; }
+
+table {
+  margin-left: 40px; }
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 125px; }
+
+th, td {
+  width: 175px; }
 
 /*# sourceMappingURL=styles.css.map */

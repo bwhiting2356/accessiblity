@@ -11,12 +11,43 @@ form {
   display: inline-block;
 }
 
-.container{
+.container {
   text-align: center;
 }
-.newsletter{
-  text-align: right;
 
+.newsletter p {
+  text-align: right;
+}
+
+.info {
+  display: none;
+}
+
+button {
+  box-sizing: border-box; 
+  margin: 10px 2px 0 2px;
+  width: calc(100% - 5px);
+  padding: 10px;
+  background: $color-text;
+  border: 1px solid darken($color-text, 20%);
+  border-radius: 5px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+fieldset {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
 }
 
 
