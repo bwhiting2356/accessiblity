@@ -9,20 +9,20 @@
   </head>
 
   <body>
-    <div class="main-nav">
-      <ul class="nav" role="navigation">
-        <li class="name"><a href="index.html">Accessible Frog</a></li>
+    <nav class="main-nav" role="navigation">
+      <ul class="nav">
+        <li class="name"><a href="#">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
-        <li><a href="#">Survey</a></li>
+        <li><a href="survey.html">Survey</a></li>
       </ul>
-    </div>
+    </nav>
 
     <header role="banner">
       <h1>Accessible Frog</h1>
-      <h3>We Make Awesome Music</h3>
+      <h2 class="subtitle">We Make Awesome Music</h2>
     </header>
 
-    <main role"main">
+    <main role="main">
       <h2>Survey</h2>
       <div class="card">
         <div class="flex">
@@ -32,7 +32,7 @@
               <fieldset>
                 <legend>Member: </legend>
                 <p>Who is your favorite band member?</p>
-                <input type="radio" name="res" id="john" value="John" tabindex="1">
+                <input type="radio" name="res" id="john" value="John">
                 <label for="john">John</label>
                 <input type="radio" name="res" id="hazzard" value="Hazzard">
                 <label for="hazzard">Hazzard</label>
@@ -44,7 +44,7 @@
               <fieldset>
                 <legend>Album: </legend>
                 <p><label for="album-what">What is your favorite album?</label></p>
-                <select id="album-what" name="select" tabindex="2">
+                <select id="album-what" name="select">
                   <option value="1">Party For An Angel</option>
                   <option value="2">A Day Of Old</option>
                   <option value="3">Finding My Shadow</option>
@@ -59,9 +59,9 @@
                 </select>
 
                 <p><label for="album-why">Why is it your favorite album?</label></p>
-                <textarea id="album-why" tabindex="3"></textarea>
+                <textarea id="album-why"></textarea>
               </fieldset>
-              <button type="submit" tabindex="4" aria-describeby="survey-info">Submit</button>
+              <button type="submit"aria-describeby="survey-info">Submit</button>
               <p class="info" id="survey-info">Submit your results for the survey</p>
             </form>
           </div>
@@ -77,15 +77,15 @@
                   <legend>Contact Info:</legend>
                   <p>
                     <label for="name">Name: </label>
-                    <input id="name" type="text" name="textfield" tabindex="5"></p>
+                    <input id="name" type="text" name="textfield"></p>
                   <p>
                     <label for="email">Email: </label>
-                    <input id="email" type ="text" name="textfield" tabindex="6"></p>
+                    <input id="email" type ="text" name="textfield"></p>
                   <p>
                     <label for="retype">Retype Email: </label>
-                    <input id="retype" type ="text" name="textfield" tabindex="7"></p>
+                    <input id="retype" type ="text" name="textfield"></p>
                 </fieldset>
-                <button type="submit" tabindex="8" aria-describeby="newsletter-info">Sign Up</button>
+                <button type="submit"aria-describeby="newsletter-info">Sign Up</button>
                 <p class="info" id="newsletter-info">Submit your information to receive the newsletter</p>
               </form>
             </div>

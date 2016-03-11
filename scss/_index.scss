@@ -138,7 +138,7 @@ h2 {
   font-weight: normal;
 }
 
-h3 {
+.subtitle {
   text-transform: uppercase;
   color: $color-heading;
   font-weight: normal;
@@ -146,6 +146,7 @@ h3 {
   letter-spacing: 3.5px;
   padding-top: 37px;
   margin-left: 15px;
+  font-size: 1.5em;
 }
 
 /* Footer styles */
