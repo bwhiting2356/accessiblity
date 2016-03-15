@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: $color-link;
+  color: $color-card-hover;
 }
 
 /* Section Styles */
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .nav a:hover {
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 header {
@@ -172,8 +172,9 @@ footer ul li {
   display: inline-block;
 }
 
-span.hide {
-  display: none;
+.hide {
+  position: absolute;
+  left: -10000px;
 }
 
 a.social {

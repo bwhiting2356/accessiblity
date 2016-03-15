@@ -19,6 +19,11 @@ table {
   margin-left: 40px;
 }
 
+caption {
+  position: absolute;
+  left: -10000px;
+}
+
 
 th:nth-child(1),
 td:nth-child(1) {
